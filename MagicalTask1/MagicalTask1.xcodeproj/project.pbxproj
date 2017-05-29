@@ -18,6 +18,7 @@
 		28185FDF1EDC4E4A00CE381F /* MTTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 28185FDD1EDC4E4A00CE381F /* MTTableViewCell.m */; };
 		28185FE01EDC4E4A00CE381F /* MTTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28185FDE1EDC4E4A00CE381F /* MTTableViewCell.xib */; };
 		28185FE51EDC6C9B00CE381F /* MTFeedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 28185FE41EDC6C9B00CE381F /* MTFeedModel.m */; };
+		28185FF01EDC811400CE381F /* CKCircleMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28185FEF1EDC811400CE381F /* CKCircleMenuView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		28185FDE1EDC4E4A00CE381F /* MTTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTTableViewCell.xib; sourceTree = "<group>"; };
 		28185FE31EDC6C9B00CE381F /* MTFeedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTFeedModel.h; sourceTree = "<group>"; };
 		28185FE41EDC6C9B00CE381F /* MTFeedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTFeedModel.m; sourceTree = "<group>"; };
+		28185FEE1EDC811400CE381F /* CKCircleMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKCircleMenuView.h; sourceTree = "<group>"; };
+		28185FEF1EDC811400CE381F /* CKCircleMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKCircleMenuView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,7 @@
 			children = (
 				28185FAC1EDC4D9300CE381F /* AppDelegate.h */,
 				28185FAD1EDC4D9300CE381F /* AppDelegate.m */,
+				28185FF41EDC882B00CE381F /* CircleMenu */,
 				28185FAF1EDC4D9300CE381F /* MTHomeViewController.h */,
 				28185FB01EDC4D9300CE381F /* MTHomeViewController.m */,
 				28185FB21EDC4D9300CE381F /* Main.storyboard */,
@@ -121,8 +125,7 @@
 				28185FDD1EDC4E4A00CE381F /* MTTableViewCell.m */,
 				28185FDE1EDC4E4A00CE381F /* MTTableViewCell.xib */,
 				28185FA91EDC4D9300CE381F /* Supporting Files */,
-				28185FE31EDC6C9B00CE381F /* MTFeedModel.h */,
-				28185FE41EDC6C9B00CE381F /* MTFeedModel.m */,
+				28185FF51EDC884400CE381F /* Model */,
 			);
 			path = MagicalTask1;
 			sourceTree = "<group>";
@@ -151,6 +154,24 @@
 				28185FD01EDC4D9300CE381F /* Info.plist */,
 			);
 			path = MagicalTask1UITests;
+			sourceTree = "<group>";
+		};
+		28185FF41EDC882B00CE381F /* CircleMenu */ = {
+			isa = PBXGroup;
+			children = (
+				28185FEE1EDC811400CE381F /* CKCircleMenuView.h */,
+				28185FEF1EDC811400CE381F /* CKCircleMenuView.m */,
+			);
+			name = CircleMenu;
+			sourceTree = "<group>";
+		};
+		28185FF51EDC884400CE381F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				28185FE31EDC6C9B00CE381F /* MTFeedModel.h */,
+				28185FE41EDC6C9B00CE381F /* MTFeedModel.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +310,7 @@
 				28185FE51EDC6C9B00CE381F /* MTFeedModel.m in Sources */,
 				28185FAE1EDC4D9300CE381F /* AppDelegate.m in Sources */,
 				28185FAB1EDC4D9300CE381F /* main.m in Sources */,
+				28185FF01EDC811400CE381F /* CKCircleMenuView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
