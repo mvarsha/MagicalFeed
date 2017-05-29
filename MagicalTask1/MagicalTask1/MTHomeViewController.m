@@ -50,7 +50,7 @@
     MTFeedModel *model2 = [[MTFeedModel alloc] init];
     model2.name = @"Some One";
     model2.datePosted = @"March 1";
-    model2.textPosted = @"How much does a corrupt officialearn in India? #Corruption";
+    model2.textPosted = @"How much does a corrupt official earn in India? #Corruption";
     model2.button1Type = MTButtonTypeComments;
     model2.button1ActivityNumber = 456;
     model2.button2Type = MTButtonTypeSupport;
@@ -98,14 +98,23 @@
     }
     MTFeedModel *model = [self.someStaticData objectAtIndex:indexPath.row];
     cell.name.text = model.name;
-    cell.textPosted.text = model.textPosted;
+    NSRange hashRange = [model.textPosted rangeOfString:@"#"];
+    NSMutableAttributedString *text = [[NSMutableAttributedString alloc] initWithString:model.textPosted];
+    [text addAttribute:NSForegroundColorAttributeName
+                 value:[UIColor colorWithRed:0.25 green:0.447 blue:0.41 alpha:1]
+                 range:NSMakeRange(hashRange.location, model.textPosted.length - hashRange.location)];
+    [cell.textPosted setAttributedText: text];
     //TODO Would need to convert date received to string here. For simplification, have added date as string in the model
     cell.datePosted.text = [NSString stringWithFormat:@"Posted on %@", model.datePosted];
     //TODO attr string should have different font sizes
     NSMutableParagraphStyle *paragraphStyle = NSMutableParagraphStyle.new;
     paragraphStyle.alignment = NSTextAlignmentCenter;
-    [cell.button1 setAttributedTitle:[[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@"Comments\n%ld", (long)model.button1ActivityNumber] attributes:@{NSParagraphStyleAttributeName:paragraphStyle}] forState:UIControlStateNormal];
-    [cell.button2 setAttributedTitle:[[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@"Support\n%ld", (long)model.button2ActivityNumber] attributes:@{NSParagraphStyleAttributeName:paragraphStyle}] forState:UIControlStateNormal];
+    [cell.button1 setAttributedTitle:[[NSAttributedString alloc]
+                                      initWithString:[NSString stringWithFormat:@"Comments\n%ld", (long)model.button1ActivityNumber]
+                                      attributes:@{NSParagraphStyleAttributeName:paragraphStyle}] forState:UIControlStateNormal];
+    [cell.button2 setAttributedTitle:[[NSAttributedString alloc]
+                                      initWithString:[NSString stringWithFormat:@"Support\n%ld", (long)model.button2ActivityNumber]
+                                      attributes:@{NSParagraphStyleAttributeName:paragraphStyle}] forState:UIControlStateNormal];
     return cell;
 }
 
@@ -140,6 +149,7 @@
         [tOptions setValue:[UIColor whiteColor] forKey:CIRCLE_MENU_BUTTON_BORDER];
         [tOptions setValue:[NSNumber numberWithInt:self.shadow] forKey:CIRCLE_MENU_DEPTH];
         [tOptions setValue:[NSDecimalNumber decimalNumberWithString:@"20.0"] forKey:CIRCLE_MENU_BUTTON_RADIUS];
+        [tOptions setValue:[NSDecimalNumber decimalNumberWithString:@"0.0"] forKey:CIRCLE_MENU_BUTTON_BORDER_WIDTH];
         [tOptions setValue:[NSNumber numberWithBool:NO] forKey:CIRCLE_MENU_TAP_MODE];
         [tOptions setValue:[NSNumber numberWithBool:NO] forKey:CIRCLE_MENU_LINE_MODE];
         [tOptions setValue:[NSNumber numberWithBool:NO] forKey:CIRCLE_MENU_BACKGROUND_BLUR];
