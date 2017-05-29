@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MagicalTask1/CKCircleMenuView.m"
-            timestampString = "517773095.649557"
+            timestampString = "517773817.768389"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "480"
-            endingLineNumber = "480"
+            startingLineNumber = "481"
+            endingLineNumber = "481"
             landmarkName = "-circleButtonTapped:"
             landmarkType = "5">
          </BreakpointContent>
