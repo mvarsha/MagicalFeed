@@ -8,9 +8,11 @@
 
 #import "MTHomeViewController.h"
 #import "MTTableViewCell.h"
+#import "MTFeedModel.h"
 
 @interface MTHomeViewController () <UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic, strong) NSArray *someStaticData;
 
 @end
 
@@ -19,8 +21,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.tableView.estimatedRowHeight = 400.0;
+    self.tableView.estimatedRowHeight = 200.0;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
+    
+    MTFeedModel *model1 = [[MTFeedModel alloc] init];
+    model1.name = @"Alphonso Mango";
+    model1.datePosted = @"April 1";
+    model1.textPosted = @"I see skies of blue, And clouds of white, The bright blessed day, The dark sacred night, And I think to myself, What a wonderful world. #Luis Armstrong";
+    model1.buttonType = 
+    self.someStaticData = @[ @{@"":@""}];
 }
 
 - (void)didReceiveMemoryWarning {

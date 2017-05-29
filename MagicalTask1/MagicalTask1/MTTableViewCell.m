@@ -9,6 +9,7 @@
 #import "MTTableViewCell.h"
 
 @interface MTTableViewCell()
+@property (weak, nonatomic) IBOutlet UIView *cardView;
 
 @end
 
@@ -17,14 +18,13 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
-    [self.layer setCornerRadius:5.0f];
-    [self.layer setBorderColor:[UIColor lightGrayColor].CGColor];
-    [self.layer setBorderWidth:0.2f];
-    [self.layer setShadowColor:[UIColor colorWithRed:225.0/255.0 green:228.0/255.0 blue:228.0/255.0 alpha:1.0].CGColor];
-    [self.layer setShadowOpacity:1.0];
-    [self.layer setShadowRadius:5.0];
-    [self.layer setShadowOffset:CGSizeMake(5.0f, 5.0f)];
-
+    [self.cardView.layer setCornerRadius:5.0f];
+    [self.cardView.layer setBorderColor:[UIColor lightGrayColor].CGColor];
+    [self.cardView.layer setBorderWidth:0.2f];
+    [self.cardView.layer setShadowColor:[UIColor lightGrayColor].CGColor];
+    [self.cardView.layer setShadowOpacity:0.5];
+    [self.cardView.layer setShadowRadius:5.0];
+    [self.cardView.layer setShadowOffset:CGSizeMake(5.0f, 5.0f)];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

@@ -17,6 +17,7 @@
 		28185FCF1EDC4D9300CE381F /* MagicalTask1UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28185FCE1EDC4D9300CE381F /* MagicalTask1UITests.m */; };
 		28185FDF1EDC4E4A00CE381F /* MTTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 28185FDD1EDC4E4A00CE381F /* MTTableViewCell.m */; };
 		28185FE01EDC4E4A00CE381F /* MTTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28185FDE1EDC4E4A00CE381F /* MTTableViewCell.xib */; };
+		28185FE51EDC6C9B00CE381F /* MTFeedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 28185FE41EDC6C9B00CE381F /* MTFeedModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		28185FDC1EDC4E4A00CE381F /* MTTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTableViewCell.h; sourceTree = "<group>"; };
 		28185FDD1EDC4E4A00CE381F /* MTTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTableViewCell.m; sourceTree = "<group>"; };
 		28185FDE1EDC4E4A00CE381F /* MTTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTTableViewCell.xib; sourceTree = "<group>"; };
+		28185FE31EDC6C9B00CE381F /* MTFeedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTFeedModel.h; sourceTree = "<group>"; };
+		28185FE41EDC6C9B00CE381F /* MTFeedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTFeedModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +121,8 @@
 				28185FDD1EDC4E4A00CE381F /* MTTableViewCell.m */,
 				28185FDE1EDC4E4A00CE381F /* MTTableViewCell.xib */,
 				28185FA91EDC4D9300CE381F /* Supporting Files */,
+				28185FE31EDC6C9B00CE381F /* MTFeedModel.h */,
+				28185FE41EDC6C9B00CE381F /* MTFeedModel.m */,
 			);
 			path = MagicalTask1;
 			sourceTree = "<group>";
@@ -281,6 +286,7 @@
 			files = (
 				28185FDF1EDC4E4A00CE381F /* MTTableViewCell.m in Sources */,
 				28185FB11EDC4D9300CE381F /* MTHomeViewController.m in Sources */,
+				28185FE51EDC6C9B00CE381F /* MTFeedModel.m in Sources */,
 				28185FAE1EDC4D9300CE381F /* AppDelegate.m in Sources */,
 				28185FAB1EDC4D9300CE381F /* main.m in Sources */,
 			);

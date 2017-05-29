@@ -3,118 +3,141 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MTTableViewCell" rowHeight="158" id="KGk-i7-Jjw" customClass="MTTableViewCell">
-            <rect key="frame" x="0.0" y="0.0" width="406" height="158"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MTTableViewCell" rowHeight="176" id="KGk-i7-Jjw" customClass="MTTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="406" height="176"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="406" height="157"/>
+                <rect key="frame" x="0.0" y="0.0" width="406" height="175"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tdh-hs-TFE">
-                        <rect key="frame" x="8" y="8" width="60" height="60"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="60" id="NNi-ku-I8K"/>
-                            <constraint firstAttribute="height" constant="60" id="j0Z-Kz-zqk"/>
-                        </constraints>
-                    </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anonymous" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bvc-Dc-oDs">
-                        <rect key="frame" x="76" y="8" width="322" height="24"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="24" id="RSo-es-MHi"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Posted on April 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqH-jI-os9">
-                        <rect key="frame" x="76" y="40" width="322" height="28"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="28" id="CtV-HV-eWe"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="16"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How much does one wonder about the world?" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Uc-hX-39a">
-                        <rect key="frame" x="8" y="76" width="390" height="19"/>
-                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="45P-3r-2Jc">
-                        <rect key="frame" x="69" y="103" width="268" height="46"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iXN-ht-gda">
+                        <rect key="frame" x="8" y="8" width="390" height="159"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yGG-RD-Ljq">
-                                <rect key="frame" x="0.0" y="0.0" width="129" height="46"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DefaultProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Tdh-hs-TFE">
+                                <rect key="frame" x="20" y="8" width="60" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="46" id="TzM-l6-xQ4"/>
-                                    <constraint firstAttribute="width" constant="129" id="eoh-dM-Qaa"/>
+                                    <constraint firstAttribute="width" constant="60" id="NNi-ku-I8K"/>
+                                    <constraint firstAttribute="height" constant="60" id="j0Z-Kz-zqk"/>
                                 </constraints>
-                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment>
-                                            <string key="content">Comments
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anonymous" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bvc-Dc-oDs">
+                                <rect key="frame" x="92" y="8" width="298" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="RSo-es-MHi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Posted on April 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqH-jI-os9">
+                                <rect key="frame" x="92" y="30" width="298" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="CtV-HV-eWe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How much does one wonder about the world?" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Uc-hX-39a">
+                                <rect key="frame" x="30" y="76" width="330" height="21"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="45P-3r-2Jc">
+                                <rect key="frame" x="61" y="105" width="268" height="46"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yGG-RD-Ljq">
+                                        <rect key="frame" x="0.0" y="0.0" width="129" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="TzM-l6-xQ4"/>
+                                            <constraint firstAttribute="width" constant="129" id="eoh-dM-Qaa"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="-20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
+                                        <state key="normal" image="Comments">
+                                            <attributedString key="attributedTitle">
+                                                <fragment>
+                                                    <string key="content">Comments
 354</string>
-                                            <attributes>
-                                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="13" name="HelveticaNeue"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="beg-76-SrJ">
-                                <rect key="frame" x="137" y="0.0" width="131" height="46"/>
-                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment>
-                                            <string key="content">Support
+                                                    <attributes>
+                                                        <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="13" name="Helvetica"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="beg-76-SrJ">
+                                        <rect key="frame" x="137" y="0.0" width="131" height="46"/>
+                                        <inset key="imageEdgeInsets" minX="-15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
+                                        <state key="normal" image="Support">
+                                            <attributedString key="attributedTitle">
+                                                <fragment>
+                                                    <string key="content">Support
 34234324</string>
-                                            <attributes>
-                                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="13" name="HelveticaNeue"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                            </button>
+                                                    <attributes>
+                                                        <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="13" name="Helvetica"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="268" id="A2Y-sf-dUb"/>
+                                    <constraint firstAttribute="height" constant="46" id="xol-nT-iV4"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
+                        <color key="backgroundColor" red="0.96862745098039216" green="0.96078431372549022" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="268" id="A2Y-sf-dUb"/>
-                            <constraint firstAttribute="height" constant="46" id="xol-nT-iV4"/>
+                            <constraint firstItem="7Uc-hX-39a" firstAttribute="top" secondItem="Tdh-hs-TFE" secondAttribute="bottom" constant="8" id="2eJ-P7-WGi"/>
+                            <constraint firstItem="7Uc-hX-39a" firstAttribute="leading" secondItem="iXN-ht-gda" secondAttribute="leading" constant="30" id="A87-g1-f7e"/>
+                            <constraint firstAttribute="bottom" secondItem="45P-3r-2Jc" secondAttribute="bottom" constant="8" id="D8h-C7-2Tk"/>
+                            <constraint firstItem="kqH-jI-os9" firstAttribute="width" secondItem="Bvc-Dc-oDs" secondAttribute="width" id="MsD-0p-jha"/>
+                            <constraint firstItem="Tdh-hs-TFE" firstAttribute="top" secondItem="iXN-ht-gda" secondAttribute="top" constant="8" id="OwH-dp-8tk"/>
+                            <constraint firstItem="kqH-jI-os9" firstAttribute="top" secondItem="Bvc-Dc-oDs" secondAttribute="bottom" constant="1" id="QYM-Jq-kzz"/>
+                            <constraint firstItem="Tdh-hs-TFE" firstAttribute="leading" secondItem="iXN-ht-gda" secondAttribute="leading" constant="20" id="TU7-7f-eJf"/>
+                            <constraint firstItem="kqH-jI-os9" firstAttribute="leading" secondItem="Bvc-Dc-oDs" secondAttribute="leading" id="ZMv-R3-2Y0"/>
+                            <constraint firstItem="Bvc-Dc-oDs" firstAttribute="top" secondItem="Tdh-hs-TFE" secondAttribute="top" id="cfY-gj-9UP"/>
+                            <constraint firstAttribute="trailing" secondItem="7Uc-hX-39a" secondAttribute="trailing" constant="30" id="hQD-m2-aN3"/>
+                            <constraint firstItem="45P-3r-2Jc" firstAttribute="centerX" secondItem="iXN-ht-gda" secondAttribute="centerX" id="iVK-Dz-5Rt"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="141" id="kE7-I0-08z"/>
+                            <constraint firstItem="45P-3r-2Jc" firstAttribute="top" secondItem="7Uc-hX-39a" secondAttribute="bottom" constant="8" id="lGV-JN-vGt"/>
+                            <constraint firstItem="kqH-jI-os9" firstAttribute="leading" secondItem="Tdh-hs-TFE" secondAttribute="trailing" constant="12" id="ny0-zd-Tpk"/>
+                            <constraint firstAttribute="trailing" secondItem="kqH-jI-os9" secondAttribute="trailing" id="xFG-S0-GjK"/>
                         </constraints>
-                    </stackView>
+                    </view>
                 </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 <constraints>
-                    <constraint firstItem="7Uc-hX-39a" firstAttribute="leading" secondItem="Tdh-hs-TFE" secondAttribute="leading" id="3AL-1N-Xz6"/>
-                    <constraint firstItem="Tdh-hs-TFE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="A0e-LS-m3r"/>
-                    <constraint firstItem="kqH-jI-os9" firstAttribute="trailing" secondItem="Bvc-Dc-oDs" secondAttribute="trailing" id="VfP-xm-Yea"/>
-                    <constraint firstItem="7Uc-hX-39a" firstAttribute="top" secondItem="kqH-jI-os9" secondAttribute="bottom" constant="8" id="Xpx-ii-7ze"/>
-                    <constraint firstItem="Bvc-Dc-oDs" firstAttribute="leading" secondItem="Tdh-hs-TFE" secondAttribute="trailing" constant="8" id="Xxo-yZ-YyD"/>
-                    <constraint firstItem="kqH-jI-os9" firstAttribute="bottom" secondItem="Tdh-hs-TFE" secondAttribute="bottom" id="Zj6-Bh-f6h"/>
-                    <constraint firstItem="Tdh-hs-TFE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="aLA-MS-Z7x"/>
-                    <constraint firstItem="kqH-jI-os9" firstAttribute="leading" secondItem="Bvc-Dc-oDs" secondAttribute="leading" id="bc8-En-ZdU"/>
-                    <constraint firstItem="Bvc-Dc-oDs" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="dXn-46-jlg"/>
-                    <constraint firstItem="7Uc-hX-39a" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="dkC-Eu-ZXW"/>
-                    <constraint firstAttribute="bottom" secondItem="45P-3r-2Jc" secondAttribute="bottom" constant="8" id="oIa-0A-DRv"/>
-                    <constraint firstItem="45P-3r-2Jc" firstAttribute="top" secondItem="7Uc-hX-39a" secondAttribute="bottom" constant="8" id="q9b-aS-TI6"/>
-                    <constraint firstItem="45P-3r-2Jc" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="xaL-5k-lCO"/>
-                    <constraint firstItem="Bvc-Dc-oDs" firstAttribute="top" secondItem="Tdh-hs-TFE" secondAttribute="top" id="xnD-qJ-pUX"/>
+                    <constraint firstItem="iXN-ht-gda" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Apb-pv-aFU"/>
+                    <constraint firstAttribute="trailing" secondItem="iXN-ht-gda" secondAttribute="trailing" constant="8" id="e1a-rs-9pj"/>
+                    <constraint firstAttribute="bottom" secondItem="iXN-ht-gda" secondAttribute="bottom" constant="8" id="rs4-sU-9jk"/>
+                    <constraint firstItem="iXN-ht-gda" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="v8n-nL-xNr"/>
                 </constraints>
             </tableViewCellContentView>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-            <point key="canvasLocation" x="536" y="639"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="cardView" destination="iXN-ht-gda" id="WAC-Sa-hlb"/>
+            </connections>
+            <point key="canvasLocation" x="536" y="648"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="Comments" width="22" height="20"/>
+        <image name="DefaultProfileIcon" width="106" height="103"/>
+        <image name="Support" width="22" height="24"/>
+    </resources>
 </document>
