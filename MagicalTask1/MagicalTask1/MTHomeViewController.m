@@ -96,6 +96,7 @@
         cell = [topLevelObjects objectAtIndex:0];
         cell.delegate = self;
     }
+    
     MTFeedModel *model = [self.someStaticData objectAtIndex:indexPath.row];
     cell.name.text = model.name;
     NSRange hashRange = [model.textPosted rangeOfString:@"#"];

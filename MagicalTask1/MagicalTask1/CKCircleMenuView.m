@@ -202,6 +202,8 @@ NSString* const CIRCLE_MENU_ALLOW_ANIMATION_INTERACTION = @"kCircleMenuAllowAnim
 
     [tButton setImage:anImage forState:UIControlStateNormal];
     tButton.tag = aTag + TAG_BUTTON_OFFSET;
+    [tButton setTitle:@"Button" forState:UIControlStateNormal];
+    tButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentRight;
 
     UIView* tInnerView = [[CKRoundView alloc] initWithFrame:CGRectMake(0.0, 0.0, self.buttonRadius * 2, self.buttonRadius * 2)];
     tInnerView.backgroundColor = self.innerViewColor;
