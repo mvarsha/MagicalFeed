@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		28185FAB1EDC4D9300CE381F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28185FAA1EDC4D9300CE381F /* main.m */; };
 		28185FAE1EDC4D9300CE381F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28185FAD1EDC4D9300CE381F /* AppDelegate.m */; };
-		28185FB11EDC4D9300CE381F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28185FB01EDC4D9300CE381F /* ViewController.m */; };
+		28185FB11EDC4D9300CE381F /* MTHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28185FB01EDC4D9300CE381F /* MTHomeViewController.m */; };
 		28185FB41EDC4D9300CE381F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28185FB21EDC4D9300CE381F /* Main.storyboard */; };
 		28185FB61EDC4D9300CE381F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28185FB51EDC4D9300CE381F /* Assets.xcassets */; };
 		28185FB91EDC4D9300CE381F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28185FB71EDC4D9300CE381F /* LaunchScreen.storyboard */; };
 		28185FC41EDC4D9300CE381F /* MagicalTask1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28185FC31EDC4D9300CE381F /* MagicalTask1Tests.m */; };
 		28185FCF1EDC4D9300CE381F /* MagicalTask1UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28185FCE1EDC4D9300CE381F /* MagicalTask1UITests.m */; };
+		28185FDF1EDC4E4A00CE381F /* MTTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 28185FDD1EDC4E4A00CE381F /* MTTableViewCell.m */; };
+		28185FE01EDC4E4A00CE381F /* MTTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28185FDE1EDC4E4A00CE381F /* MTTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +41,8 @@
 		28185FAA1EDC4D9300CE381F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		28185FAC1EDC4D9300CE381F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		28185FAD1EDC4D9300CE381F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		28185FAF1EDC4D9300CE381F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		28185FB01EDC4D9300CE381F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		28185FAF1EDC4D9300CE381F /* MTHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTHomeViewController.h; sourceTree = "<group>"; };
+		28185FB01EDC4D9300CE381F /* MTHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTHomeViewController.m; sourceTree = "<group>"; };
 		28185FB31EDC4D9300CE381F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		28185FB51EDC4D9300CE381F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28185FB81EDC4D9300CE381F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +53,9 @@
 		28185FCA1EDC4D9300CE381F /* MagicalTask1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicalTask1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28185FCE1EDC4D9300CE381F /* MagicalTask1UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MagicalTask1UITests.m; sourceTree = "<group>"; };
 		28185FD01EDC4D9300CE381F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28185FDC1EDC4E4A00CE381F /* MTTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTableViewCell.h; sourceTree = "<group>"; };
+		28185FDD1EDC4E4A00CE381F /* MTTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTableViewCell.m; sourceTree = "<group>"; };
+		28185FDE1EDC4E4A00CE381F /* MTTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +108,15 @@
 			children = (
 				28185FAC1EDC4D9300CE381F /* AppDelegate.h */,
 				28185FAD1EDC4D9300CE381F /* AppDelegate.m */,
-				28185FAF1EDC4D9300CE381F /* ViewController.h */,
-				28185FB01EDC4D9300CE381F /* ViewController.m */,
+				28185FAF1EDC4D9300CE381F /* MTHomeViewController.h */,
+				28185FB01EDC4D9300CE381F /* MTHomeViewController.m */,
 				28185FB21EDC4D9300CE381F /* Main.storyboard */,
 				28185FB51EDC4D9300CE381F /* Assets.xcassets */,
 				28185FB71EDC4D9300CE381F /* LaunchScreen.storyboard */,
 				28185FBA1EDC4D9300CE381F /* Info.plist */,
+				28185FDC1EDC4E4A00CE381F /* MTTableViewCell.h */,
+				28185FDD1EDC4E4A00CE381F /* MTTableViewCell.m */,
+				28185FDE1EDC4E4A00CE381F /* MTTableViewCell.xib */,
 				28185FA91EDC4D9300CE381F /* Supporting Files */,
 			);
 			path = MagicalTask1;
@@ -243,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28185FE01EDC4E4A00CE381F /* MTTableViewCell.xib in Resources */,
 				28185FB91EDC4D9300CE381F /* LaunchScreen.storyboard in Resources */,
 				28185FB61EDC4D9300CE381F /* Assets.xcassets in Resources */,
 				28185FB41EDC4D9300CE381F /* Main.storyboard in Resources */,
@@ -270,7 +279,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28185FB11EDC4D9300CE381F /* ViewController.m in Sources */,
+				28185FDF1EDC4E4A00CE381F /* MTTableViewCell.m in Sources */,
+				28185FB11EDC4D9300CE381F /* MTHomeViewController.m in Sources */,
 				28185FAE1EDC4D9300CE381F /* AppDelegate.m in Sources */,
 				28185FAB1EDC4D9300CE381F /* main.m in Sources */,
 			);

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MTHomeViewController.h
 //  MagicalTask1
 //
 //  Created by Varsha on 29/05/17.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface MTHomeViewController : UIViewController
 
 
 @end
