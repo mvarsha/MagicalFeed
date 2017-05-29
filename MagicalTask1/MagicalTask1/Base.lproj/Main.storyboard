@@ -18,20 +18,40 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gtH-dJ-f7h">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="12" width="414" height="724"/>
                                 <color key="backgroundColor" red="0.80392156862745101" green="0.80392156862745101" blue="0.80392156862745101" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="TXe-Li-45S"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="1Q6-a9-34M"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jZ-8o-lhN">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="aX0-tt-RhV"/>
+                                    <constraint firstAttribute="width" constant="100" id="tcf-X4-Gnm"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="LeftTop"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GEd-dh-tdF">
+                                <rect key="frame" x="314" y="0.0" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="jKz-yw-IZ5"/>
+                                    <constraint firstAttribute="width" constant="100" id="tdW-29-kwJ"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="RightTop"/>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.80392156859999997" green="0.80392156859999997" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="1jZ-8o-lhN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1ye-5I-w5z"/>
+                            <constraint firstItem="1jZ-8o-lhN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5gC-kF-X24"/>
                             <constraint firstAttribute="trailing" secondItem="gtH-dJ-f7h" secondAttribute="trailing" id="HY4-zc-VIB"/>
+                            <constraint firstAttribute="trailing" secondItem="GEd-dh-tdF" secondAttribute="trailing" id="Omd-iO-YkD"/>
                             <constraint firstItem="gtH-dJ-f7h" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QWW-Lp-5LD"/>
+                            <constraint firstItem="GEd-dh-tdF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Vwp-oD-bwg"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gtH-dJ-f7h" secondAttribute="bottom" id="YI6-mj-l9v"/>
-                            <constraint firstItem="gtH-dJ-f7h" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="nga-N0-gRJ"/>
+                            <constraint firstItem="gtH-dJ-f7h" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="12" id="nga-N0-gRJ"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
@@ -44,4 +64,8 @@
             <point key="canvasLocation" x="493" y="564"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="LeftTop" width="173" height="202"/>
+        <image name="RightTop" width="181" height="198"/>
+    </resources>
 </document>

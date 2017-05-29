@@ -73,6 +73,9 @@
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <connections>
+                                            <action selector="button1Click:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="tjm-Fb-8lZ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="beg-76-SrJ">
                                         <rect key="frame" x="137" y="0.0" width="131" height="46"/>
@@ -92,6 +95,9 @@
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <connections>
+                                            <action selector="button2Click:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="fuQ-gL-UCR"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -130,13 +136,18 @@
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
+                <outlet property="button1" destination="yGG-RD-Ljq" id="ekz-ek-9Kc"/>
+                <outlet property="button2" destination="beg-76-SrJ" id="rJe-7i-TPJ"/>
                 <outlet property="cardView" destination="iXN-ht-gda" id="WAC-Sa-hlb"/>
+                <outlet property="datePosted" destination="kqH-jI-os9" id="9yl-sd-oAv"/>
+                <outlet property="name" destination="Bvc-Dc-oDs" id="g6q-vQ-tEg"/>
+                <outlet property="textPosted" destination="7Uc-hX-39a" id="HBF-Yp-d82"/>
             </connections>
             <point key="canvasLocation" x="536" y="648"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="Comments" width="22" height="20"/>
+        <image name="Comments" width="30" height="27"/>
         <image name="DefaultProfileIcon" width="106" height="103"/>
         <image name="Support" width="22" height="24"/>
     </resources>

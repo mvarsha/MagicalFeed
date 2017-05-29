@@ -33,4 +33,16 @@
     // Configure the view for the selected state
 }
 
+- (IBAction)button1Click:(id)sender {
+    if ([self.delegate respondsToSelector:@selector(button1Click)]) {
+        [self.delegate button1Click];
+    }
+}
+
+- (IBAction)button2Click:(id)sender {
+    if ([self.delegate respondsToSelector:@selector(button2Click)]) {
+        [self.delegate button2Click];
+    }
+}
+
 @end

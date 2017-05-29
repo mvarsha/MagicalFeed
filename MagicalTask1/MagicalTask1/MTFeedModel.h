@@ -17,6 +17,7 @@ typedef NS_ENUM (NSInteger, MTButtonType) {
 @interface MTFeedModel : NSObject
 
 @property (nonatomic, strong) NSString *name;
+//Would need to receive & store date as NSDate
 @property (nonatomic, strong) NSString *datePosted;
 @property (nonatomic, strong) NSString *textPosted;
 @property (nonatomic) MTButtonType button1Type;
