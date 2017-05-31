@@ -13,6 +13,6 @@
 +(instancetype)sharedInstance;
 - (NSArray *)parentNodesOf:(VHTreeNode*)child;
 - (VHTreeNode *)myNode;
-- (void)updateNodeInIndex:(NSInteger)index withNode:(VHTreeNode *)node;
+- (void)updateNodeWith:(VHTreeNode *)node;
 
 @end

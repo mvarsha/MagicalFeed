@@ -53,7 +53,7 @@
             label.text = nameField.text;
             node.name = nameField.text;
             node.nameEntered = YES;
-            [[VHTreeUtility sharedInstance] updateNodeInIndex:row withNode:node];
+            [[VHTreeUtility sharedInstance] updateNodeWith:node];
             [wself refreshData];
         }
     }];
